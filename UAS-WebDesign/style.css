@@ -1,0 +1,258 @@
+/* ALL TAG */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Montserrat";
+    padding-top: 100px;
+    background-color: #F1F1F1;
+    color: #272829;
+}
+nav a {
+    text-decoration: 0;
+    transition: 0.3s;
+}
+nav a:hover {
+    color: #F05941;
+    text-shadow: 0px 0px 5px #BE3144;
+    text-shadow: 0px 0px 10px #BE3144;
+    font-size: 1.2em;
+}
+ul{
+    list-style: none;
+}
+
+/* Navigation */
+nav {
+    padding: 20px 80px;
+    box-shadow: 5px 5px 10px gray;
+    display: flex;
+    color: #0F0F0F;
+    justify-content: space-between;
+    background-color: white;
+    /* background-image: linear-gradient(#161A30, #31304D); */
+    position: fixed;
+    top:0;
+    right:0 ;
+    left: 0;
+    z-index: 10;
+}
+nav span{
+    color: #B31312;
+}
+nav ul{
+    width: 40%;
+    display: flex;
+    justify-content: space-evenly;
+}
+nav ul li a{
+    color: #0F0F0F;
+}
+/* END OF NAVIGATION */
+/* Profil */
+.container1 {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   
+    position: relative;
+}
+.imagebiodata{
+    display: flex;
+    justify-content: center;
+}
+.pp{
+   width: fit-content;
+}
+
+.pp img{
+    width: 150px;
+    transition: 0.5s;
+}
+.pp:hover img{
+    transform: scale(1.5);
+}
+.pita {
+    position: absolute;
+    top:290px;
+    left:39.5%;
+    height: 150px;
+    width: 300px;
+    z-index: 1;
+    height: 150px;
+    box-sizing: border-box;
+    background-color: #f1f1f1;
+}
+.pita img{
+    position: relative;
+    top: -160px;
+    width: 300px;
+}
+.desc {
+    z-index: 1;
+}
+.profil h1{
+    font-family: "Quick-Sand";
+    font-size: 70px;
+    color: #2B3499;
+}
+/* End of Profil */
+/* About ME */
+.container2{
+    align-items: center;
+    background-color: #393E46;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 150px;
+    padding-top: 100px;
+}
+.desc2 {
+    display: flex;
+    text-align: center;
+    width: 50%;
+    text-align: center;
+    margin-top: 30px;
+}
+.container2 h1{
+    color: #B4D4FF;
+    font-size: 70px;
+}
+.desc2 p{
+    margin: 0px 15px;
+    color: #B4D4FF;
+}
+/* End OF About ME */
+
+/* Gallery */
+.container3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+}
+.container3 h1{
+    font-family: "Quick-Sand";
+    color: #2B3499;
+    font-size: 70px;
+    margin-bottom: 50px;
+}
+.container3 img{
+ width: 200px;
+ transition: 1s;
+}
+.container3 img:hover{
+ transform: scale(2);
+}
+.gallery{
+    display: flex;
+    width: 95%;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    justify-content: center;
+}
+
+.gallery img{
+    margin: 10px;
+}
+.gallery2{
+    display: flex;
+    width: 95%;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    justify-content: center;
+   
+}
+
+.gallery2 img{
+    margin: 10px;
+}
+
+.imgs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+    margin: 20px;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: 5px 5px 25px grey;
+    padding: 15px;
+}
+
+.imgs:hover {
+    box-shadow: 0px 0px 10px aqua;
+}
+
+.imgs p{
+    font-size: 0.8em;
+}
+/* Footer */
+footer{
+    margin-top: -10px;
+    display: flex;
+    padding: 0px 100px;
+    padding-bottom: 50px;
+    color: white;
+    background-color: #393E46;
+    justify-content: center;
+}
+footer .logo img  { 
+    margin-right: 50px;
+    width: 300px;
+}
+.socialmedia{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+}
+.socialmedia img{
+    width: 40px;
+    margin-right:20px ;
+}
+.imgfoot{
+    display: flex;
+    align-items: center;
+}
+footer a{
+    margin-top: -20px;
+    color:white ;
+    font-size: 1.1em;
+    transition: 0.3s;
+    text-decoration: none;
+    font-weight: lighter;
+}
+footer a:hover{
+    color: aqua;
+   font-size: 0.9em
+}
+.foot{
+    display: flex;
+    /* text-align: center; */
+    background-color: #525CEB;
+}
+/* End of Gallery */
+
+@font-face {
+    font-family: "Montserrat";
+    src: url(/font/MontserratAlternates-Medium.otf);
+    
+}
+@font-face {
+    font-family: "Lobster";
+    src: url(font/Lobster_1.3.otf);
+}
+@font-face {
+    font-family: "Quick-Sand";
+    src: url(font/Quicksand-Regular.otf);
+}
+
+@media(max-width: 600){
+*{
+    transform: scale(0.5);
+}
+}
