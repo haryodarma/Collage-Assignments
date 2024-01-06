@@ -1,241 +1,136 @@
+.opening{
+    position: fixed;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 10px solid red;
+}
+.opening img{
+   width: 1000px;
+    border: 10px solid red;
+}
+
 /* ALL TAG */
 * {
     margin: 0;
     padding: 0;
 }
-
 body {
     font-family: "Montserrat";
-    padding-top: 100px;
-    background-color: #F1F1F1;
+    background-color: lightgrey;
     color: #272829;
 }
-nav a {
+
+.container1 nav a {
     text-decoration: 0;
     transition: 0.3s;
 }
-nav a:hover {
+.container1 nav a:hover {
     color: #F05941;
     text-shadow: 0px 0px 5px #BE3144;
     text-shadow: 0px 0px 10px #BE3144;
-    font-size: 1.2em;
+    font-size: 25px;
 }
 ul{
     list-style: none;
 }
 
 /* Navigation */
-nav {
-    padding: 20px 80px;
-    box-shadow: 5px 5px 10px gray;
+.container1 nav {
+    text-shadow: 0px 0px 5px black;
+    padding: 30px 80px;
     display: flex;
-    color: #0F0F0F;
+    color: white;
     justify-content: space-between;
-    background-color: white;
-    /* background-image: linear-gradient(#161A30, #31304D); */
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0%);
     position: fixed;
     top:0;
     right:0 ;
     left: 0;
-    z-index: 10;
+    z-index: 10;box-sizing: border-box;
 }
-nav span{
+.container1 .logo h1{
+    font-size: 50px;
+    color: white;
+    text-shadow: 5px 5px 10px black;
+}
+.container1 nav span{
     color: #B31312;
 }
-nav ul{
+.container1 nav ul{
     width: 40%;
     display: flex;
     justify-content: space-evenly;
+
 }
-nav ul li a{
-    color: #0F0F0F;
+.container1 nav ul li a{
+    color: white;
+    font-size: 20px;
 }
 /* END OF NAVIGATION */
 /* Profil */
 .container1 {
-    text-align: center;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-   
-    position: relative;
+   height: 653px;
+   width: 100%;
+   /* background-color: #0F1035; */
+   background-image: url(image/city.jpg);
+   padding-top: 220px;
+   padding-left: 150px;
+   /* margin-bottom: -10px; */
+   box-sizing: border-box;
+   overflow: hidden;
 }
-.imagebiodata{
-    display: flex;
-    justify-content: center;
-}
-.pp{
-   width: fit-content;
+.container1 .greeting h1{
+    font-size: 50px;
+    color: #11009E;
+    text-shadow: 0px 0px 10px gold;
+    font-family: "Pixel";
+    margin-bottom: 30px;
 }
 
-.pp img{
-    width: 150px;
-    transition: 0.5s;
-}
-.pp:hover img{
-    transform: scale(1.5);
-}
-.pita {
+.container1 .greeting .pp img{
     position: absolute;
-    top:290px;
-    left:39.5%;
-    height: 150px;
+    top: 105px;
+    right: 100px;
     width: 300px;
-    z-index: 1;
-    height: 150px;
-    box-sizing: border-box;
-    background-color: #f1f1f1;
+    filter: brightness(0.6);
 }
-.pita img{
-    position: relative;
-    top: -160px;
-    width: 300px;
+
+.container1 .greeting h2, .container1 .greeting p{
+    font-family: "Dot";
+    margin-left: 30px;
+    font-size: 30px;
+    font-weight: bold;
+    color: orange;
+    text-shadow: 0px 0px 10px red;
+    letter-spacing: 2px;
 }
-.desc {
-    z-index: 1;
+.know{
+  color: aqua;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 180px;
+  height: 50px;
+  border: 2px solid aqua;
+    background-color: rgba(30, 6, 114, 0.5);
+    position: absolute;
+    bottom: 110px;
+    left: 750px;
+    border-radius: 100px;
+    transition: 1s;
 }
-.profil h1{
-    font-family: "Quick-Sand";
-    font-size: 70px;
-    color: #2B3499;
+.know:hover{
+  box-shadow: 0px 25px 10px black, 0px 25px 30px yellow;
+  transform: scale(1.2);
 }
 /* End of Profil */
-/* About ME */
-.container2{
-    align-items: center;
-    background-color: #393E46;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    padding-bottom: 150px;
-    padding-top: 100px;
-}
-.desc2 {
-    display: flex;
-    text-align: center;
-    width: 50%;
-    text-align: center;
-    margin-top: 30px;
-}
-.container2 h1{
-    color: #B4D4FF;
-    font-size: 70px;
-}
-.desc2 p{
-    margin: 0px 15px;
-    color: #B4D4FF;
-}
-/* End OF About ME */
 
-/* Gallery */
-.container3{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 100px;
-}
-.container3 h1{
-    font-family: "Quick-Sand";
-    color: #2B3499;
-    font-size: 70px;
-    margin-bottom: 50px;
-}
-.container3 img{
- width: 200px;
- transition: 1s;
-}
-.container3 img:hover{
- transform: scale(2);
-}
-.gallery{
-    display: flex;
-    width: 95%;
-    flex-wrap: wrap;
-    box-sizing: border-box;
-    justify-content: center;
-}
+/* About Me */
 
-.gallery img{
-    margin: 10px;
-}
-.gallery2{
-    display: flex;
-    width: 95%;
-    flex-wrap: wrap;
-    box-sizing: border-box;
-    justify-content: center;
-   
-}
-
-.gallery2 img{
-    margin: 10px;
-}
-
-.imgs {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: fit-content;
-    margin: 20px;
-    border-radius: 15px;
-    background-color: white;
-    box-shadow: 5px 5px 25px grey;
-    padding: 15px;
-}
-
-.imgs:hover {
-    box-shadow: 0px 0px 10px aqua;
-}
-
-.imgs p{
-    font-size: 0.8em;
-}
-/* Footer */
-footer{
-    margin-top: -10px;
-    display: flex;
-    padding: 0px 100px;
-    padding-bottom: 50px;
-    color: white;
-    background-color: #393E46;
-    justify-content: center;
-}
-footer .logo img  { 
-    margin-right: 50px;
-    width: 300px;
-}
-.socialmedia{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    
-}
-.socialmedia img{
-    width: 40px;
-    margin-right:20px ;
-}
-.imgfoot{
-    display: flex;
-    align-items: center;
-}
-footer a{
-    margin-top: -20px;
-    color:white ;
-    font-size: 1.1em;
-    transition: 0.3s;
-    text-decoration: none;
-    font-weight: lighter;
-}
-footer a:hover{
-    color: aqua;
-   font-size: 0.9em
-}
-.foot{
-    display: flex;
-    /* text-align: center; */
-    background-color: #525CEB;
-}
-/* End of Gallery */
 
 @font-face {
     font-family: "Montserrat";
@@ -251,6 +146,30 @@ footer a:hover{
     src: url(font/Quicksand-Regular.otf);
 }
 
+@font-face {
+    font-family: "Pixel";
+    src: url(font/PixelifySans-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: "Rubik";
+    src: url(font/RubikLines-Regular.ttf);
+}
+@font-face {
+    font-family: "Dot";
+    src: url(font/DotGothic16-Regular.ttf);
+}
+@font-face {
+    font-family: "Bitter";
+    src: url(font/Bitter-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: "Bebas";
+    src: url(font/BebasNeue-Regular.ttf);
+}
+@font-face {
+    font-family: "Archivo";
+    src: url(font/ArchivoBlack-Regular.ttf);
+}
 @media(max-width: 600){
 *{
     transform: scale(0.5);

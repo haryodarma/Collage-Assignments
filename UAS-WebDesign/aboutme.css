@@ -1,0 +1,372 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+body{
+    background-color: rgb(228, 227, 227);
+    color: #191919;
+}
+/* Nav */
+nav{
+    position: fixed;
+    top:0;
+    left:0 ;
+    right:0 ;
+    background-color: #0F1035;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100px;
+    box-shadow: 0px 5px 10px black;
+    box-sizing: border-box;
+}
+nav h1{
+    color : white;
+    font-family: "Montserrat";
+    
+}
+nav span {
+    color: red;
+}
+nav ul{
+    display: flex;
+    width: 40%;
+    justify-content: space-evenly;
+}
+nav a{
+color:white;
+text-decoration: none;
+font-size: 15px;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+transition: 0.4s;
+}
+nav a:hover{
+    color :yellow;
+    text-shadow: 0px 0px 10px aqua, 0px 0px 30px aqua;
+    font-size: 18px;
+}
+/* End of Nav */
+/* About Me */
+.container2 {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 653px;
+}
+.container2 .cont{
+width: 70%;
+height: fit-content;
+display: flex;
+align-items: center;
+text-align: center;
+flex-direction: column;
+}
+.container2 .cont h1{
+    font-family: "Archivo";
+    font-size: 70px;
+    letter-spacing: 10px;
+    background-image: url(image/sunset.jpg);
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    padding-top: 100px;
+}
+.container2 .cont .info img{
+width: 250px;
+height: 250px;
+margin:35px 0px 100px;
+border-radius: 40% 0px 40% 0px;
+transition: 1s;
+}
+.container2 .cont .info img:hover{
+    transform: scale(1.1);
+    box-shadow: 20px 40px 10px #363636, 20px 40px 100px aqua;
+}
+.container2 .cont p{
+    font-family: "Bitter";
+    color: #0F0F0F;
+    letter-spacing: 1px;
+    margin-left:70px;
+    margin-bottom: 50px;
+}
+
+.container2 .cont .info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+.sm ul {
+    width: 850px;
+    height: 40px;
+    justify-content: space-evenly;
+    display: flex;
+    list-style: none;
+    border: 1px solid yellow;
+    box-shadow: 0px 0px 10px orange;
+    background-color: rgb(240, 239, 239);
+}
+.sm ul li{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.sm img{
+    width: 25px;
+    height: 25px;
+    margin-right: 15px;
+}
+.sm a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    height: fit-content;
+    color:#0F0F0F ;
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.sm a:hover{
+    color: orangered ;
+    text-shadow: 0px 0px 10px red;
+}
+/* End OF About ME */
+
+/* Gallery */
+.container3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 150px;
+    margin-bottom: 300px;
+}
+.container3 .album{
+    display: flex;
+    /* flex-direction: column; */
+    justify-content:center ;
+    align-items: center;
+}
+.container3 h1{
+    font-family: "Archivo";
+    font-size: 70px;
+    letter-spacing: 10px;
+    background-image: url(image/sunset.jpg);
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    /* padding-top: 100px; */
+    padding-bottom: 50px;
+}
+
+.container3 img{
+ width: 100%;
+}
+.gallery{
+    display: flex;
+    width: 95%;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+
+.gallery2{
+    display: flex;
+    width: 95%;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+
+.imgs {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content:center ;
+    align-items: center;
+    height: fit-content;
+    margin: 20px;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: 5px 5px 25px grey;
+    padding: 15px;
+    background-color: white;
+    transition: 1s;
+}
+
+.imgs:hover {
+    box-shadow: 0px 0px 10px aqua;
+    position: relative;
+    transform: scale(1.5);
+}
+
+.imgs p{
+    font-size: 0.8em;
+    color: #0F1035;
+   
+}
+
+
+/* Contact Me */
+.container4{
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+}
+
+.cme {
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+    background-image: linear-gradient(#0F1035 30%, #B80000) ;
+    background-color: darkblue;
+    width: 60%;
+    padding: 10px;
+    box-shadow: 0px 0px 100px black;
+ margin-bottom: 50px;
+ box-sizing: border-box;
+}
+.cme h1{
+    font-family: "Archivo";
+    font-size: 70px;
+    letter-spacing: 10px;
+    background-image: url(image/sunset.jpg);
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+   padding: 10px 0px;
+}
+.inpt{
+    background-color: rgba(255, 255, 255, 50%);
+    padding: 10px 30px;
+    margin: 10px 2px;
+    border-radius: 10px;
+}
+.inpt:hover{
+    /* box-shadow: 0px 0px 10px aqua; */
+    border: 2px solid aqua;
+}
+.kirim{
+    color: aqua;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 165px;
+  height: 35px;
+  border: 2px solid aqua;
+    background-color: rgba(29, 0, 190, 0.295);
+    bottom: 120px;
+    border-radius: 100px;
+    margin: 20px 0px;
+    transition: 0.5s;
+}
+.kirim:hover{
+    color: orange;
+transform: scale(1.1);
+border: 2px solid orange;
+box-shadow: 0px 0px 10px red;
+}
+/* End of Contact Me */
+/* Footer */
+.footer{
+    background-color: #0F1035;
+    display: flex;
+    justify-content: center;
+    color: rgb(204, 204, 204);
+    padding: 10px;
+    width: 1345px;
+    position: absolute;
+    bottom: 1;
+    box-sizing: border-box;
+}
+/* End of Footer */
+/* Input */
+.form__group {
+    position: relative;
+    padding: 15px 0 0;
+    margin-top: 10px;
+    width: 50%;
+  }
+  
+  .form__field {
+    font-family: "Bitter";
+    width: 600px;
+    border: 0;
+    border-bottom: 2px solid #9b9b9b;
+    outline: 0;
+    font-size: 1rem;
+    color: rgb(39, 39, 39);
+    padding: 7px 0;
+    background: transparent;
+    transition: border-color 0.2s;
+    box-sizing: border-box;
+  }
+  .form__field::placeholder {
+    color: transparent;
+  }
+  .form__field:placeholder-shown ~ .form__label {
+    font-size: 1.3rem;
+    cursor: text;
+    top: 20px;
+  }
+  
+  .form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: rgb(20, 221, 221);
+  }
+  
+  .form__field:focus {
+    padding-bottom: 6px;
+    font-weight: 700;
+    border-width: 3px;
+    border-image: linear-gradient(to right, #11998e, #38ef7d);
+    border-image-slice: 1;
+  }
+  .form__field:focus ~ .form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: #11998e;
+    font-weight: 700;
+  }
+  
+  /* reset input */
+  .form__field:required, .form__field:invalid {
+    box-shadow: none;
+  }
+/* End of Input */
+/* My Font */
+@font-face {
+    font-family: "Bitter";
+    src: url(font/Bitter-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: "Bebas";
+    src: url(font/BebasNeue-Regular.ttf);
+}
+@font-face {
+    font-family: "Archivo";
+    src: url(font/ArchivoBlack-Regular.ttf);
+}
+@font-face {
+    font-family: "Montserrat";
+    src: url(/font/MontserratAlternates-Medium.otf);
+    
+}
+/* End Of My Font */
